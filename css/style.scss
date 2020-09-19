@@ -38,6 +38,10 @@ body {
     }
 }
 
+.text_color_secondary {
+    color: $secondaryColor;
+}
+
 .fontawesome_pseudo_style,
 ul.list_fontawesome_pseudo_style li::before {
     font-family: 'Font Awesome 5 free';
@@ -60,10 +64,6 @@ button.owl-dot {
     background-color: $primaryColor;
 }
 
-.lg_service_dropdown_inner {
-    display: none;
-}
-
 // Typography
 .text_uppercase {
     text-transform: uppercase;
@@ -78,6 +78,65 @@ button.owl-dot {
 }
 
 // Components
+.banner {
+    background-color: rgba(169, 218, 138, .2);
+    background-image: url("../assets/images/hero_banner.png");
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+ul.breadcrumb {
+    background-color: unset;
+}
+
+ul.breadcrumb li {
+    text-transform: uppercase;
+    color: $lighter;
+    font-weight: lighter;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    font-weight: 500;
+    content: ">\00a0";
+}
+
+ul.breadcrumb li a {
+    color: $light;
+    font-weight: 500;
+    text-decoration: none;
+    color: $lighter;
+}
+
+ul.breadcrumb li a:hover {
+    color: $secondaryColor;
+}
+
+.next_nav_child {
+    display: none;
+}
+
+.nest_navList_parent:hover {
+    transition: all 300ms ease-in-out;
+    >.next_nav_child {
+        display: block;
+    }
+    .next_nav_child {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .first_nav_child {
+        left: 0;
+    }
+    .second_nav_child {
+        right: 0;
+    }
+}
+
 // Pages
 .why_choose_us_section {
     .section_title {
@@ -107,6 +166,14 @@ button.owl-dot {
     }
 }
 
+.contact_page {
+    .contact_media {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        ;
+    }
+}
+
 // 
 .hero {
     background-color: rgba(169, 218, 138, .2);
@@ -114,6 +181,7 @@ button.owl-dot {
     background-blend-mode: soft-light;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 90vh;
     color: $whitecolor;
 }
@@ -136,6 +204,7 @@ footer {
     background-blend-mode: soft-light;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 3em 0;
     color: $whitecolor;
     .section_title {
@@ -170,7 +239,7 @@ footer {
 }
 
 // Media Query
-@media(min-width: 700px) {
+@media(min-width: 972px) {
     .logo_img_wrapper {
         width: 80px;
     }
@@ -180,17 +249,25 @@ footer {
         &:hover,
         &.active {
             background-color: $primaryColor;
-            a {
+            .nav-link {
                 color: $whitecolor !important;
             }
         }
     }
-    .service_dropdown {
-        position: unset;
-    }
-    .lg_service_dropdown_inner {
-        display: block;
-        width: 100%;
+    .nest_navList_parent:hover {
+        transition: all 300ms ease-in-out;
+        >.next_nav_child {
+            display: block;
+        }
+        .next_nav_child {
+            width: auto;
+        }
+        .first_nav_child {
+            left: -96%;
+        }
+        .second_nav_child {
+            right: -96%;
+        }
     }
     .service_desc_list {
         display: grid;

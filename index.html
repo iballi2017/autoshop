@@ -28,37 +28,52 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
             <div class="container">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./">
                     <div class="logo_img_wrapper"><img src="./assets/images/brand_logo.png" class="img-fluid" alt="company brand logo"></div>
                 </a>
                 <button class="navbar-toggler border-0 focus_outline_0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item dropdown service_dropdown">
+                        <li class="nav-item dropdown" id="customDropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Services
-                        </a>
+                                Services
+                            </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                            <div class="dropdown-menu lg_service_dropdown_inner" aria-labelledby="navbarDropdown">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vero minus corporis odit fugiat magnam.
+                                <ul class="list_style_ul_children p-0">
+                                    <li><a class="dropdown-item" href="#">Vehicle Analysis</a></li>
+                                    <li><a class="dropdown-item" href="#">Steering & Suspension</a></li>
+                                    <li><a class="dropdown-item" href="#">Oil & filter change</a></li>
+                                    <li><a class="dropdown-item" href="#">Preventive maintenance</a></li>
+                                    <li class="nest_navList_parent" style="position: relative;"><a class="dropdown-item" href="#">more..</a>
+                                        <ul class="list_style_ul_children next_nav_child first_nav_child px-0 bg-white">
+                                            <li><a class="dropdown-item" href="#">Electrical Systems</a></li>
+                                            <li><a class="dropdown-item" href="#">Batteries</a></li>
+                                            <li><a class="dropdown-item" href="#">Brake system</a></li>
+                                            <li><a class="dropdown-item" href="#">A/C Cooling & heating</a></li>
+                                            <li class="nest_navList_parent" style="position: relative;"><a class="dropdown-item" href="#">more..</a>
+                                                <ul class="list_style_ul_children next_nav_child second_nav_child px-0 bg-white">
+                                                    <li><a class="dropdown-item" href="#">Alignment</a></li>
+                                                    <li><a class="dropdown-item" href="#">Exhaust system</a></li>
+                                                    <li><a class="dropdown-item" href="#">Fuel emission system</a></li>
+                                                    <li><a class="dropdown-item" href="#">Pre-purchase inspections</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="./views/contact.php">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Book an appointment</a>
@@ -72,11 +87,13 @@
 
     <!-- Main -->
     <main>
-        <section class="hero d-flex flex_align_items_center">
-            <div class="container text-center text-md-left">
-                <h1>THE TRUSTED NAME IN AUTO REPAIR</h1>
-                <h5>We are opened and ready to serve our customers</h5>
-                <button class="btn-lg px-5 border-0 focus_outline_0">Contact Us</button>
+        <section class="hero">
+            <div class="d-flex flex_align_items_center" style="height: 100%">
+                <div class="container text-center text-md-left">
+                    <h1>THE TRUSTED NAME IN AUTO REPAIR</h1>
+                    <h5>We are opened and ready to serve our customers</h5>
+                    <button class="btn-lg px-5 border-0 focus_outline_0">Contact Us</button>
+                </div>
             </div>
         </section>
         <section class="why_choose_us_section py-5 bg_grey">
@@ -157,7 +174,7 @@
                             <a href="#">Warranty</a>
                         </li>
                         <li>
-                            <a href="#">Contact us</a>
+                            <a href="./views/contact.php">Contact us</a>
                         </li>
                     </ul>
                 </div>
