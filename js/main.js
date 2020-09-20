@@ -28,15 +28,14 @@ $(document).ready(function() {
 // toggle nav dropdon on hover event
 var dropdown = document.getElementById("customDropdown");
 dropdown.addEventListener("mouseenter", function() {
-    console.log(this.lastElementChild)
+    // console.log(this.lastElementChild)
     if (!this.lastElementChild.classList.contains("show")) {
         this.lastElementChild.classList.add("show")
     }
 })
 dropdown.addEventListener("mouseleave", function() {
-    console.log(this.lastElementChild)
+    // console.log(this.lastElementChild)
     if (this.lastElementChild.classList.contains("show")) {
         this.lastElementChild.classList.remove("show")
     }
 })
-console.log(dropdown)

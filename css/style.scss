@@ -1,9 +1,9 @@
 // SCSS variables
-$primaryColor: #FA9500;
-$secondaryColor: #A2C900;
-$textColor: #2D2D2C;
+$primaryColor: #fa9500;
+$secondaryColor: #a2c900;
+$textColor: #2d2d2c;
 $light: #818181;
-$lighter: #F6F6F6;
+$lighter: #f6f6f6;
 $whitecolor: #ffffff;
 * {
     box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
 
 // Global
 .logo_img_wrapper {
-    width: 60px;
+    width: 80px;
 }
 
 .flex_align_items_center {
@@ -35,6 +35,7 @@ body {
 .list_style_ul_children {
     li {
         list-style: none;
+        line-height: 35px;
     }
 }
 
@@ -44,7 +45,7 @@ body {
 
 .fontawesome_pseudo_style,
 ul.list_fontawesome_pseudo_style li::before {
-    font-family: 'Font Awesome 5 free';
+    font-family: "Font Awesome 5 free";
     font-weight: 900;
 }
 
@@ -79,7 +80,7 @@ button.owl-dot {
 
 // Components
 .banner {
-    background-color: rgba(169, 218, 138, .2);
+    background-color: rgba(169, 218, 138, 0.2);
     background-image: url("../assets/images/hero_banner.png");
     background-blend-mode: soft-light;
     background-position: center;
@@ -137,6 +138,58 @@ ul.breadcrumb li a:hover {
     }
 }
 
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+textarea.form-control {
+    border-radius: 0;
+    border: 1px solid $light;
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+        border: 1px solid $secondaryColor;
+    }
+}
+
+.special_input_wrapper {
+    border: 1px solid $light;
+    position: relative;
+    &>input {
+        border: none;
+        z-index: 4;
+    }
+    &.date_input_wrapper {
+        &::after {
+            content: "\f073";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            height: 100%;
+            background-color: $primaryColor;
+            padding: 1em;
+            color: $whitecolor;
+            display: grid;
+            place-content: center;
+            z-index: 1;
+        }
+    }
+}
+
+.form_submit_btn {
+    background-color: $primaryColor;
+    color: $whitecolor;
+    transition: all 300ms ease-in-out;
+}
+
+article {
+    margin: 2em 0;
+    p {
+        line-height: 34px;
+    }
+}
+
 // Pages
 .why_choose_us_section {
     .section_title {
@@ -147,7 +200,7 @@ ul.breadcrumb li a:hover {
             display: block;
             width: 5%;
             margin: 0 auto;
-            margin-bottom: .4em;
+            margin-bottom: 0.4em;
         }
     }
 }
@@ -160,7 +213,7 @@ ul.breadcrumb li a:hover {
             width: 2px;
             display: inline-block;
             background-color: $textColor;
-            margin-right: .4em;
+            margin-right: 0.4em;
             margin-bottom: -5px;
         }
     }
@@ -170,13 +223,22 @@ ul.breadcrumb li a:hover {
     .contact_media {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        ;
+    }
+    .cotact_form_wrapper {
+        max-width: 700px;
+        margin: 2em auto;
     }
 }
 
-// 
+.booking_page {
+    .page_title_wrapper {
+        border-bottom: 1px solid $light;
+    }
+}
+
+//
 .hero {
-    background-color: rgba(169, 218, 138, .2);
+    background-color: rgba(169, 218, 138, 0.2);
     background-image: url("../assets/images/hero_banner.png");
     background-blend-mode: soft-light;
     background-position: center;
@@ -191,7 +253,7 @@ ul.breadcrumb li a:hover {
     line-height: 32px;
     li::before {
         content: "\f058";
-        font-family: 'Font Awesome 5 Free';
+        font-family: "Font Awesome 5 Free";
         font-weight: 900;
         margin-right: 1em;
         color: $secondaryColor;
@@ -223,7 +285,7 @@ footer {
     .footer_nav_links {
         li::before {
             content: "\f068";
-            margin-right: .4em;
+            margin-right: 0.4em;
         }
         a {
             text-decoration: none;
@@ -239,12 +301,12 @@ footer {
 }
 
 // Media Query
-@media(min-width: 972px) {
+@media (min-width: 972px) {
     .logo_img_wrapper {
         width: 80px;
     }
     .navbar-nav .nav-item {
-        padding: .7em .5em;
+        padding: 0.7em 0.5em;
         transition: all 300ms ease-in-out;
         &:hover,
         &.active {
@@ -254,19 +316,22 @@ footer {
             }
         }
     }
-    .nest_navList_parent:hover {
-        transition: all 300ms ease-in-out;
-        >.next_nav_child {
-            display: block;
-        }
-        .next_nav_child {
-            width: auto;
-        }
-        .first_nav_child {
-            left: -96%;
-        }
-        .second_nav_child {
-            right: -96%;
+    .nest_navList_parent {
+        position: relative;
+        &:hover {
+            transition: all 300ms ease-in-out;
+            >.next_nav_child {
+                display: block;
+            }
+            .next_nav_child {
+                width: auto;
+            }
+            .first_nav_child {
+                left: -96%;
+            }
+            .second_nav_child {
+                right: -100%;
+            }
         }
     }
     .service_desc_list {
@@ -276,6 +341,16 @@ footer {
         margin-top: 2em;
         li {
             font-size: 1.3rem;
+        }
+    }
+    .contact_page {
+        .contact_media {
+            li {
+                border-right: 1px solid $light;
+                &+li:last-child {
+                    border: none;
+                }
+            }
         }
     }
 }

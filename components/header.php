@@ -48,48 +48,35 @@
                                 Services
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <!-- <a class="dropdown-item" href="#">Vehicle Analysis</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Steering & Suspension</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Oil & filter change</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Preventive maintenance</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">more..</a>
-                                <div class="dropdown-divider"></div> -->
                                 <ul class="list_style_ul_children p-0">
                                     <li><a class="dropdown-item" href="#">Vehicle Analysis</a></li>
-                                    <li><a class="dropdown-item" href="#">Steering & Suspension</a></li>
-                                    <li><a class="dropdown-item" href="#">Oil & filter change</a></li>
+                                    <li><a class="dropdown-item" href="../views/steering-and-suspension.php">Steering & Suspension</a></li>
+                                    <li><a class="dropdown-item" href="../views/oil-and-filter-changes.php">Oil & filter change</a></li>
                                     <li><a class="dropdown-item" href="#">Preventive maintenance</a></li>
-                                    <li class="nest_navList_parent" style="position: relative;"><a class="dropdown-item" href="#">more..</a>
-                                        <ul class="list_style_ul_children next_nav_child first_nav_child px-0 bg-white">
-                                            <li><a class="dropdown-item" href="#">Electrical Systems</a></li>
-                                            <li><a class="dropdown-item" href="#">Batteries</a></li>
-                                            <li><a class="dropdown-item" href="#">Brake system</a></li>
-                                            <li><a class="dropdown-item" href="#">A/C Cooling & heating</a></li>
-                                            <li class="nest_navList_parent" style="position: relative;"><a class="dropdown-item" href="#">more..</a>
-                                                <ul class="list_style_ul_children next_nav_child second_nav_child px-0 bg-white">
-                                                    <li><a class="dropdown-item" href="#">Alignment</a></li>
-                                                    <li><a class="dropdown-item" href="#">Exhaust system</a></li>
+                                    <li class="nest_navList_parent"><a class="dropdown-item" href="#">more..</a>
+                                        <ul class="list_style_ul_children next_nav_child first_nav_child px-0 bg-white shadow">
+                                            <li><a class="dropdown-item" href="../views/electrical-systems.php">Electrical Systems</a></li>
+                                            <li><a class="dropdown-item" href="../views/batteries.php">Batteries</a></li>
+                                            <li><a class="dropdown-item" href="../views/break-system.php">Brake system</a></li>
+                                            <li><a class="dropdown-item" href="../views/ac-cooling-and-heating.php">A/C Cooling & heating</a></li>
+                                            <li class="nest_navList_parent"><a class="dropdown-item" href="#">more..</a>
+                                                <ul class="list_style_ul_children next_nav_child second_nav_child px-0 bg-white shadow">
+                                                    <li><a class="dropdown-item" href="../views/alignment.php">Alignment</a></li>
+                                                    <li><a class="dropdown-item" href="../views/exhaust-system.php">Exhaust system</a></li>
                                                     <li><a class="dropdown-item" href="#">Fuel emission system</a></li>
-                                                    <li><a class="dropdown-item" href="#">Pre-purchase inspections</a></li>
+                                                    <li><a class="dropdown-item" href="../views/pre-purchase-inspections.php">Pre-purchase inspections</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </li>
                                 </ul>
-
-                                <!-- <a class="dropdown-item" href="#">Electrical Systems</a>
-                                <div class="dropdown-divider"></div> -->
                             </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../views/contact.php">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Book an appointment</a>
+                            <a class="nav-link" href="../views/appointment-booking.php">Book an appointment</a>
                         </li>
                     </ul>
                 </div>
