@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
     <link rel="icon" href="../assets/images/favicon.png" type="image/gif" sizes="16x16">
-    <title>Auto Shop</title>
+    <title>Mainland autoshop | Nigeria Automobile Accessory, Automobile Accessory Manufacturers, Suppliers, Price | Maintenance | Repair | mainlandautoshop.com</title>
+    <meta name="Keywords" content="Automobile Accessory, Automobile Accessory, Automobile Accessory manufacturers, Automobile Accessory suppliers" />
+    <meta name="Description" content="Automobile Accessory manufacturers - Select 2020 high quality Automobile Accessory products in best price from certified Auto Accessory manufacturers, Automobile Parts suppliers, wholesalers and factory on mainlandautoshop.com"
+    />
+
     <!-- font family -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap" rel="stylesheet">
     <!-- Font awesome -->
