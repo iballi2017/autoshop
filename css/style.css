@@ -81,21 +81,26 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #a2c900; }
 
-.next_nav_child {
-  display: none; }
+.dropdown-item {
+  color: #2d2d2c; }
+  .dropdown-item:hover, .dropdown-item:focus {
+    background-color: #ffffff !important;
+    color: #fa9500 !important; }
 
-.nest_navList_parent:hover {
-  transition: all 300ms ease-in-out; }
-  .nest_navList_parent:hover > .next_nav_child {
-    display: block; }
-  .nest_navList_parent:hover .next_nav_child {
-    position: absolute;
-    top: 0;
-    width: 100%; }
-  .nest_navList_parent:hover .first_nav_child {
-    left: 0; }
-  .nest_navList_parent:hover .second_nav_child {
-    right: 0; }
+.nest_navList_parent {
+  position: relative; }
+  .nest_navList_parent > a {
+    display: none; }
+  .nest_navList_parent:hover {
+    transition: all 300ms ease-in-out; }
+    .nest_navList_parent:hover > .next_nav_child {
+      display: block;
+      position: absolute;
+      width: 100%; }
+    .nest_navList_parent:hover .first_nav_child {
+      left: 0; }
+    .nest_navList_parent:hover .second_nav_child {
+      right: 0; }
 
 input[type="text"],
 input[type="email"],
@@ -232,18 +237,21 @@ footer {
       .navbar-nav .nav-item:hover .nav-link, .navbar-nav .nav-item.active .nav-link {
         color: #ffffff !important; }
 
-  .nest_navList_parent {
-    position: relative; }
-    .nest_navList_parent:hover {
-      transition: all 300ms ease-in-out; }
-      .nest_navList_parent:hover > .next_nav_child {
-        display: block; }
-      .nest_navList_parent:hover .next_nav_child {
-        width: auto; }
-      .nest_navList_parent:hover .first_nav_child {
-        left: -96%; }
-      .nest_navList_parent:hover .second_nav_child {
-        right: -100%; }
+  .next_nav_child {
+    display: none; }
+
+  .nest_navList_parent > a {
+    display: block; }
+  .nest_navList_parent:hover {
+    transition: all 300ms ease-in-out; }
+    .nest_navList_parent:hover > .next_nav_child {
+      display: block;
+      top: 0;
+      width: auto; }
+    .nest_navList_parent:hover .first_nav_child {
+      left: -96%; }
+    .nest_navList_parent:hover .second_nav_child {
+      right: -100%; }
 
   .service_desc_list {
     display: grid;
