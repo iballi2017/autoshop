@@ -183,7 +183,7 @@ article {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 40vh;
   color: #ffffff; }
 
 .service_desc_list {
@@ -260,6 +260,9 @@ footer {
     margin-top: 2em; }
     .service_desc_list li {
       font-size: 1.3rem; }
+
+  .hero {
+    height: 90vh; }
 
   .contact_page .contact_media li {
     border-right: 1px solid #818181; }

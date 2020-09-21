@@ -253,7 +253,7 @@ article {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 40vh;
     color: $whitecolor;
 }
 
@@ -355,6 +355,9 @@ footer {
         li {
             font-size: 1.3rem;
         }
+    }
+    .hero {
+        height: 90vh;
     }
     .contact_page {
         .contact_media {
