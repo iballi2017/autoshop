@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <!-- <link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16"> -->
+    <link rel="icon" href="../assets/images/favicon.png" type="image/gif" sizes="16x16">
     <title>Auto Shop</title>
     <!-- font family -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap" rel="stylesheet">
@@ -31,6 +31,8 @@
         }
     .services_mega_menu {
         position: absolute;
+        padding-top: 2em;
+        padding-bottom: 2em;
         width: 100%;
     }
     </style>
@@ -64,48 +66,48 @@
                             <div class="dropdown-menu services_mega_menu" aria-labelledby="navbarDropdown">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="../views/steering-and-suspension.php">Vehicle
                                                 Analysis</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item"
                                                 href="../views/steering-and-suspension.php">Steering & Suspension</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="../views/oil-and-filter-changes.php">Oil &
                                                 filter change</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="#">Preventive maintenance</a>
                                         </div>
                                         <!--  -->
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="../views/electrical-systems.php">Electrical
                                                 Systems</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="../views/batteries.php">Batteries</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="../views/break-system.php">Brake system</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="../views/ac-cooling-and-heating.php">A/C
                                                 Cooling & heating</a>
                                         </div>
                                         <!--  -->
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="../views/alignment.php">Alignment</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="../views/exhaust-system.php">Exhaust
                                                 system</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item" href="#">Fuel emission system</a>
                                         </div>
-                                        <div class="col-12 col-md-3">
+                                        <div class="col-12 col-md-4 col-lg-3">
                                             <a class="dropdown-item"
                                                 href="../views/pre-purchase-inspections.php">Pre-purchase
                                                 inspections</a>
