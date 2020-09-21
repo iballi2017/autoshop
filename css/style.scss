@@ -43,6 +43,10 @@ body {
     color: $secondaryColor;
 }
 
+.text_color_primary {
+    color: $primaryColor;
+}
+
 .fontawesome_pseudo_style,
 ul.list_fontawesome_pseudo_style li::before {
     font-family: "Font Awesome 5 free";
@@ -51,6 +55,14 @@ ul.list_fontawesome_pseudo_style li::before {
 
 .bg_grey {
     background-color: $lighter;
+}
+
+.bg_unset {
+    background-color: unset;
+}
+
+.bg_primary {
+    background-color: $primaryColor;
 }
 
 .focus_outline_0,
@@ -114,6 +126,16 @@ ul.breadcrumb li a {
 
 ul.breadcrumb li a:hover {
     color: $secondaryColor;
+}
+
+.text_hover_underline_none {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.rounded_edge_3 {
+    border-radius: 3px;
 }
 
 .dropdown-item {

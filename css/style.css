@@ -25,6 +25,9 @@ body {
 .text_color_secondary {
   color: #a2c900; }
 
+.text_color_primary {
+  color: #fa9500; }
+
 .fontawesome_pseudo_style,
 ul.list_fontawesome_pseudo_style li::before {
   font-family: "Font Awesome 5 free";
@@ -32,6 +35,12 @@ ul.list_fontawesome_pseudo_style li::before {
 
 .bg_grey {
   background-color: #f6f6f6; }
+
+.bg_unset {
+  background-color: unset; }
+
+.bg_primary {
+  background-color: #fa9500; }
 
 .focus_outline_0:focus,
 button.owl-dot:focus {
@@ -80,6 +89,12 @@ ul.breadcrumb li a {
 
 ul.breadcrumb li a:hover {
   color: #a2c900; }
+
+.text_hover_underline_none:hover {
+  text-decoration: none; }
+
+.rounded_edge_3 {
+  border-radius: 3px; }
 
 .dropdown-item {
   color: #2d2d2c; }

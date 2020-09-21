@@ -39,3 +39,23 @@ dropdown.addEventListener("mouseleave", function() {
         this.lastElementChild.classList.remove("show")
     }
 })
+
+
+
+// Reveal other footer block contents on click of "More details"
+const footerBlocksToggler = document.getElementById("footerBlocksToggler");
+const footerHiddenBlocks = document.querySelectorAll(".footer_hidden_blocks");
+
+function openblocks() {
+    // console.log(footerHiddenBlocks)
+    footerHiddenBlocks.forEach(element => {
+        // console.log(element)
+        if (element.classList.contains("d-none")) {
+            element.classList.remove("d-none")
+            if (footerBlocksToggler.classList.contains("d-block") && !footerBlocksToggler.classList.contains("d-none")) {
+                footerBlocksToggler.classList.remove("d-block")
+                footerBlocksToggler.classList.add("d-none")
+            }
+        }
+    })
+}

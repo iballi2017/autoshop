@@ -11,8 +11,9 @@
                         <dt>Working hours:</dt>
                         <dd>Monday - Saturday (8am-5pm)</dd>
                     </dl>
+                    <button class="d-block d-md-none border-0 text_color_primary bg_unset focus_outline_0 my-3" id="footerBlocksToggler" onclick="openblocks()">More details <i class="fas fa-arrow-right"></i></button>
                 </div>
-                <div class="col-6 col-md-4">
+                <div class="col-6 col-md-4 d-none d-md-block footer_hidden_blocks">
                     <div class="section_title">
                         Enquiry
                     </div>
@@ -34,7 +35,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-4">
+                <div class="col-6 col-md-4 d-none d-md-block footer_hidden_blocks">
                     <div class="section_title">
                         Connect with us
                     </div>
