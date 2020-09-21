@@ -1,6 +1,6 @@
 <!-- header -->
 <?php
-include_once '../components/header.php'; ?>
+include_once '../components/header2.php'; ?>
 <div class="banner">
     <style>
     </style>
