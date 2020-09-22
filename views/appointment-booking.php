@@ -50,16 +50,14 @@ include_once '../components/header2.php'; ?>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="date">Date</label>
-                        <!-- <input type="date" class="form-control" id="date"> -->
-                        <div class="special_input_wrapper date_input_wrapper fontawesome_pseudo_style">
+                        <div class="date_input_wrapper special_input_wrapper fontawesome_pseudo_style">
                             <!-- <input type="date" class="form-control" id="date"> -->
                             <input type="text" class="form-control" id="date" placeholder="dd/mm/yyy">
                         </div>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="time">Time</label>
-                        <!-- <input type="time" class="form-control" id="time"> -->
-                        <div class="special_input_wrapper time_input_wrapper fontawesome_pseudo_style">
+                        <div class="time_input_wrapper fontawesome_pseudo_style">
                             <input type="time" class="form-control" id="time">
                         </div>
                     </div>

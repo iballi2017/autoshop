@@ -134,12 +134,10 @@ textarea.form-control {
     border: 1px solid #a2c900; }
 
 .special_input_wrapper {
-  border: 1px solid #818181;
   position: relative; }
   .special_input_wrapper.borderPrimary {
     border: 1px solid #a2c900; }
   .special_input_wrapper > input {
-    border: none;
     z-index: 4; }
   .special_input_wrapper.date_input_wrapper::after {
     content: "\f073";
