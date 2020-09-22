@@ -186,6 +186,9 @@ textarea.form-control {
 .special_input_wrapper {
     border: 1px solid $light;
     position: relative;
+    &.borderPrimary {
+        border: 1px solid $secondaryColor;
+    }
     &>input {
         border: none;
         z-index: 4;

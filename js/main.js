@@ -23,6 +23,24 @@ $(document).ready(function() {
             }
         }
     });
+
+    // const specialInputWrapper = document.querySelectorAll(".special_input_wrapper");
+    // console.log(specialInputWrapper);
+
+    // specialInputWrapper.forEach(element => {
+    //     $(element).on("focus", function() {
+    //             $(element).addClass("borderPrimary")
+    //             console.log(element.children)
+    //             $(element.children).css({ "border": "none" })
+    //             $(element.children).focus()
+    //             console.log("hi")
+    //         })
+    //         // $(element).on("focusout", function() {
+    //         //     $(element).removeClass("borderPrimary")
+    //         //     $(element.children).css({ "border": "none" })
+    //         //     $(element.children).focusout()
+    //         // })
+    // })
 })
 
 // toggle nav dropdon on hover event
