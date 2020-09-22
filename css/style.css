@@ -219,17 +219,17 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3em 0;
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: .8rem; }
   footer .section_title {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-size: 1rem; }
     footer .section_title::before {
       content: "";
       height: 2px;
       width: 10%;
       background-color: #a2c900;
       display: block; }
-    footer .section_title ~ ul li {
-      margin-bottom: 1em; }
   footer .footer_nav_links li::before {
     content: "\f068";
     margin-right: 0.4em; }
@@ -239,6 +239,8 @@ footer {
   footer .social_icons a {
     text-decoration: none;
     color: #ffffff; }
+  footer form button {
+    font-size: .8rem; }
 
 @media (min-width: 972px) {
   .logo_img_wrapper {
@@ -277,7 +279,7 @@ footer {
       font-size: 1.3rem; }
 
   .hero {
-    height: 90vh; }
+    height: 55vh; }
 
   .contact_page .contact_media li {
     border-right: 1px solid #818181; }

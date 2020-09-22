@@ -300,17 +300,16 @@ footer {
     background-size: cover;
     padding: 3em 0;
     color: $whitecolor;
+    font-size: .8rem;
     .section_title {
         margin-bottom: 1em;
+        font-size: 1rem;
         &::before {
             content: "";
             height: 2px;
             width: 10%;
             background-color: $secondaryColor;
             display: block;
-        }
-        ~ul li {
-            margin-bottom: 1em;
         }
     }
     .footer_nav_links {
@@ -328,6 +327,9 @@ footer {
             text-decoration: none;
             color: $whitecolor;
         }
+    }
+    form button {
+        font-size: .8rem;
     }
 }
 
@@ -379,7 +381,7 @@ footer {
         }
     }
     .hero {
-        height: 90vh;
+        height: 55vh;
     }
     .contact_page {
         .contact_media {
