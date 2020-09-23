@@ -338,6 +338,13 @@ footer {
     }
 }
 
+.footer_widget_2 {
+    background-color: $textColor;
+    color: $whitecolor;
+    padding: 1em 0;
+    font-size: .9rem;
+}
+
 // Media Query
 @media (min-width: 972px) {
     .logo_img_wrapper {
