@@ -18,6 +18,9 @@ body {
 .flex_justify_content_sparound {
   justify-content: space-around; }
 
+.flex_wrap {
+  flex-wrap: wrap; }
+
 .list_style_ul_children li {
   list-style: none;
   line-height: 35px; }
@@ -198,7 +201,7 @@ article {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: 400px;
   color: #ffffff; }
 
 .service_desc_list {
