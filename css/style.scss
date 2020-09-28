@@ -105,6 +105,13 @@ button.owl-dot {
     display: flex;
 }
 
+.btn {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
 ul.breadcrumb {
     background-color: unset;
 }

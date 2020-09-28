@@ -71,6 +71,10 @@ button.owl-dot:focus {
   background-size: cover;
   display: flex; }
 
+.btn:focus {
+  outline: 0;
+  box-shadow: none; }
+
 ul.breadcrumb {
   background-color: unset; }
 
