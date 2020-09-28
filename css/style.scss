@@ -226,6 +226,24 @@ article {
     }
 }
 
+.prof {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: #C4C4C4;
+    .service_col::before,
+    .prof_col::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 3rem;
+    }
+    .service_col::before {
+        content: "\f7d9";
+    }
+    .prof_col::before {
+        content: "\f0b1";
+    }
+}
+
 // Pages
 .why_choose_us_section {
     .section_title {

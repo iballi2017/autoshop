@@ -96,7 +96,25 @@
 
     <!-- Main -->
     <main>
-        <section class="hero">
+        <style>
+            picture source,
+            picture img {
+                width: 100%;
+            }
+        </style>
+        <section>
+            <a href="#">
+                <picture>
+                    <source srcset="./assets/images/MA_Hero_01.png" media="(min-width: 800px)">
+                    <source srcset="./assets/images/MA_Hero_02.png" media="(min-width: 700px)">
+                    <source srcset="./assets/images/MA_Hero_01.png" media="(min-width: 600px)">
+                    <source srcset="./assets/images/MA_Hero_02.png" media="(min-width: 400px)">
+                    <img src="./assets/images/MA_Hero_02.png" alt="" />
+                </picture>
+            </a>
+        </section>
+
+        <!-- <section class="hero">
             <div class="d-flex flex_align_items_center" style="height: 100%">
                 <div class="container text-center text-md-left">
                     <h1>THE TRUSTED NAME IN AUTO REPAIR</h1>
@@ -105,7 +123,7 @@
                             Us <i class="fas fa-envelope"></i></a></div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="why_choose_us_section py-5 bg_grey">
             <h2 class="section_title text-center text_capitalize">Why choose us</h2>
 
@@ -159,6 +177,26 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Highlights -->
+        <section class="bg_grey prof">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="inner text-center service_col">
+                            <h4>Services</h4>
+                            <p>We are full-service auto repair shop that specializes in all brand of cars and our services include general repair, preventive maintenance, wheel alignment, brake repair, A/C repair, etc</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="inner text-center prof_col">
+                            <h4>Professional</h4>
+                            <p>To ensure consistensy and quality in our services, we have some of the top auto technicians will asses your vehicle and provide informatin and services to ensure that your vehcle is up and running</p>
                         </div>
                     </div>
                 </div>
