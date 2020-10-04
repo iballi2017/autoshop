@@ -1,3 +1,5 @@
+// Import Font-family
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 // SCSS variables
 $primaryColor: #fa9500;
 $secondaryColor: #a2c900;
@@ -5,14 +7,21 @@ $textColor: #2d2d2c;
 $light: #818181;
 $lighter: #f6f6f6;
 $whitecolor: #ffffff;
-* {
+$fontFamily: "Roboto",
+sans-serif;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+html {
+    font-family: $fontFamily;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-size: 100%;
 }
 
 // Global
