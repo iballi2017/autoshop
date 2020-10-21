@@ -330,6 +330,76 @@ article {
     }
 }
 
+.diagnostic_home_service_page {
+    dt {
+        /* padding-left: 1.4em; */
+        font-size: 1.4rem;
+    }
+    dd::before {
+        content: "-";
+        margin-right: 1em;
+    }
+    .booking-link {
+        background-color: $textColor;
+        color: #fff;
+    }
+    .booking-link .container .link-wrapper {
+        display: inline-block;
+        background-color: $primaryColor;
+        transition: all 300ms ease-in-out;
+    }
+    .booking-link .container .link-wrapper:hover {
+        background-color: rgba(250, 149, 0, .6);
+    }
+    .booking-link .container .link-wrapper a {
+        text-decoration: none;
+        color: $whitecolor;
+    }
+}
+
+.home-service-form {
+    // custom radio
+    .radio_rej {
+        position: absolute;
+        opacity: 0;
+        ~label {
+            display: flex;
+            cursor: pointer;
+        }
+    }
+    .custom_radio {
+        --size: 1.5em;
+        width: var(--size);
+        height: var(--size);
+        margin-right: var(--size);
+        cursor: pointer;
+        border: 0.6px solid $light;
+        box-shadow: inset 0 0 0 5px $whitecolor;
+        background-color: $light;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: transform 300ms ease-in-out;
+        display: grid;
+        place-content: center;
+    }
+    .radio_rej[type="radio"]:checked+label .custom_radio {
+        background: $primaryColor;
+    }
+    //
+    //
+    #seller_account_details {
+        transition: all 200ms ease-in-out;
+        transform-origin: top;
+        &.hide {
+            position: absolute;
+            right: 0;
+            left: 0;
+            transform: scaleY(0);
+            opacity: 0;
+        }
+    }
+}
+
 footer {
     background-color: $textColor;
     background-image: url("../assets/images/hero_banner.png");

@@ -29,7 +29,7 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-md-0 shadow">
             <div class="container">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                 <a class="navbar-brand" href="../">
@@ -81,6 +81,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../views/appointment-booking.php">Book an appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/diagnostic-home-service.php">Diagnostic Home Service</a>
                         </li>
                     </ul>
                 </div>
