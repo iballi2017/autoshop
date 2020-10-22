@@ -213,6 +213,11 @@ textarea.form-control:focus {
   background-color: #fa9500;
   color: #ffffff;
   transition: all 300ms ease-in-out;
+  text-transform: uppercase;
+}
+.form_submit_btn:hover {
+  background-color: #fa7900;
+  color: #ffffff;
 }
 
 article {
@@ -297,7 +302,6 @@ article p {
 }
 
 .diagnostic_home_service_page dt {
-  /* padding-left: 1.4em; */
   font-size: 1.4rem;
 }
 .diagnostic_home_service_page dd::before {
@@ -314,13 +318,28 @@ article p {
   transition: all 300ms ease-in-out;
 }
 .diagnostic_home_service_page .booking-link .container .link-wrapper:hover {
-  background-color: rgba(250, 149, 0, 0.6);
+  background-color: #fa7900;
 }
 .diagnostic_home_service_page .booking-link .container .link-wrapper a {
   text-decoration: none;
   color: #ffffff;
 }
 
+.home-service-form .back-btn {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.home-service-form .back-btn::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  margin-right: 5px;
+}
+.home-service-form .title-wrapper {
+  margin: 0 auto;
+}
 .home-service-form .radio_rej {
   position: absolute;
   opacity: 0;
@@ -357,6 +376,12 @@ article p {
   left: 0;
   transform: scaleY(0);
   opacity: 0;
+}
+
+.house_service_form_response_page .inner {
+  display: grid;
+  place-content: center;
+  height: 60vh;
 }
 
 footer {

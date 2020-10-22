@@ -1,44 +1,17 @@
 <?php include_once '../components/header2.php'; ?>
-
-<style>
-.back-btn {
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-
-.back-btn::before {
-    content: "\f104";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 3rem;
-    margin-right: 5px;
-}
-.title-wrapper{
-    margin: 0 auto;
-}
-/* .title-wrapper{
-    position: absolute;
-    top: .9em;
-    right: 0;
-    left: 0;
-} */
-</style>
-
-
 <!-- main content -->
 <div class="home-service-form booking_page">
     <section>
-        <div class="container" style="position: relative">
-        <div class="row">
-            
-            <div class="col-12">
-                <button class="btn back-btn" onclick="goBack()">Back</button>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <button class="btn back-btn" onclick="goBack()">Back</button>
+                </div>
+                <div class="text-center title-wrapper text-center">
+                    <h1>BOOK FOR HOME SERVICE</h1>
+                </div>
             </div>
-            <div class="text-center title-wrapper text-center">
-                <h1>BOOK FOR HOME SERVICE</h1>
-            </div>
-        </div>
         </div>
     </section>
     <section>
@@ -77,7 +50,6 @@
                     <div class="form-group col-md-6">
                         <label for="date">Date</label>
                         <div class="date_input_wrapper special_input_wrapper fontawesome_pseudo_style">
-                            <!-- <input type="date" class="form-control" id="date"> -->
                             <input type="text" class="form-control" id="date" placeholder="dd/mm/yyy">
                         </div>
                     </div>
@@ -106,7 +78,7 @@
                     <legend class="text-center text_capitalize">Payment Method</legend>
                 </div>
                 <div class="form-group">
-                    
+
                     <!--  -->
 
                     <div class="row p-3">
@@ -151,7 +123,7 @@
             </fieldset>
 
             <div class="container text-center mb-5">
-                <button type="submit" class="form_submit_btn btn btn-lg rounded-0 px-5">Submit</button>
+                <button type="submit" class="form_submit_btn btn btn-lg rounded-0 px-5">Confirm</button>
             </div>
         </form>
     </section>

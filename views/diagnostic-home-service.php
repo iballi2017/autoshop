@@ -1,8 +1,6 @@
 <!-- header -->
 <?php include_once '../components/header2.php'; ?>
 <div class="banner">
-    <style>
-    </style>
     <div class="container py-4">
         <ul class="breadcrumb bg-0">
             <li><a href="../">Home</a></li>

@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 // SCSS variables
 $primaryColor: #fa9500;
+$primaryColor_alt: rgb(250,
+121,
+0);
 $secondaryColor: #a2c900;
 $textColor: #2d2d2c;
 $light: #818181;
@@ -233,6 +236,11 @@ textarea.form-control {
     background-color: $primaryColor;
     color: $whitecolor;
     transition: all 300ms ease-in-out;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $primaryColor_alt;
+        color: $whitecolor;
+    }
 }
 
 article {
@@ -332,7 +340,6 @@ article {
 
 .diagnostic_home_service_page {
     dt {
-        /* padding-left: 1.4em; */
         font-size: 1.4rem;
     }
     dd::before {
@@ -349,7 +356,7 @@ article {
         transition: all 300ms ease-in-out;
     }
     .booking-link .container .link-wrapper:hover {
-        background-color: rgba(250, 149, 0, .6);
+        background-color: $primaryColor_alt;
     }
     .booking-link .container .link-wrapper a {
         text-decoration: none;
@@ -358,6 +365,21 @@ article {
 }
 
 .home-service-form {
+    .back-btn {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    .back-btn::before {
+        content: "\f104";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 3rem;
+        margin-right: 5px;
+    }
+    .title-wrapper {
+        margin: 0 auto;
+    }
     // custom radio
     .radio_rej {
         position: absolute;
@@ -386,7 +408,6 @@ article {
         background: $primaryColor;
     }
     //
-    //
     #seller_account_details {
         transition: all 200ms ease-in-out;
         transform-origin: top;
@@ -397,6 +418,14 @@ article {
             transform: scaleY(0);
             opacity: 0;
         }
+    }
+}
+
+.house_service_form_response_page {
+    .inner {
+        display: grid;
+        place-content: center;
+        height: 60vh;
     }
 }
 
