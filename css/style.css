@@ -378,10 +378,10 @@ article p {
   opacity: 0;
 }
 
-.house_service_form_response_page .inner {
+.home_service_form_response_page .inner {
   display: grid;
   place-content: center;
-  height: 60vh;
+  height: 70vh;
 }
 
 footer {

@@ -3,7 +3,7 @@
 include_once '../components/header2.php'; ?>
 
 <!-- main content -->
-<div class="house_service_form_response_page my-5">
+<div class="home_service_form_response_page my-5">
 
 <div class="container inner">
     <div class="text-center py-5">
