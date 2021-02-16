@@ -1,4 +1,4 @@
-<?php include_once '../components/header2.php'; ?>
+<?php include_once '../components/header.php'; ?>
 <!-- main content -->
 <div class="home-service-form booking_page">
     <section>

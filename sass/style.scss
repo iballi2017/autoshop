@@ -107,9 +107,21 @@ button.owl-dot {
 }
 
 // Components
+
+
+.services_nav_item {
+    position: unset;
+}
+
+.services_mega_menu {
+    position: absolute;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+}
 .banner {
     background-color: rgba(169, 218, 138, 0.2);
-    background-image: url("../assets/images/hero_banner.png");
+    background-image: url("../../assets/images/hero_banner.png");
     background-blend-mode: soft-light;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,6 +133,22 @@ button.owl-dot {
     &:focus {
         outline: 0;
         box-shadow: none;
+    }
+}
+
+.btn_diagnostic{
+    background-color: rgba(250, 149, 0, .6);
+    border: inset 2px red;
+    border-style: solid;
+    border-width: 2px;
+    border-right-color: $primaryColor;
+    border-left-color: $primaryColor;
+    border-top-color: $primaryColor;
+    border-bottom-color: $primaryColor;
+    transition: all 300ms ease-in-out;
+    &:hover{
+        background-color: $primaryColor;
+        color: $whitecolor;
     }
 }
 
@@ -326,6 +354,21 @@ article {
     color: $whitecolor;
 }
 
+.hero_form_area{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+@media(min-width: 900px){
+    
+    .hero_form_area{
+        /* width: 100%;
+        max-width: 400px; */
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
 .service_desc_list {
     padding: 0;
     line-height: 32px;
@@ -345,22 +388,6 @@ article {
     dd::before {
         content: "-";
         margin-right: 1em;
-    }
-    .booking-link {
-        background-color: $textColor;
-        color: #fff;
-    }
-    .booking-link .container .link-wrapper {
-        display: inline-block;
-        background-color: $primaryColor;
-        transition: all 300ms ease-in-out;
-    }
-    .booking-link .container .link-wrapper:hover {
-        background-color: $primaryColor_alt;
-    }
-    .booking-link .container .link-wrapper a {
-        text-decoration: none;
-        color: $whitecolor;
     }
 }
 
@@ -388,6 +415,12 @@ article {
             display: flex;
             cursor: pointer;
         }
+    }
+    legend{
+        font-size: 1.3rem;
+    }
+    input{
+        height: 43px;
     }
     .custom_radio {
         --size: 1.5em;
@@ -431,7 +464,7 @@ article {
 
 footer {
     background-color: $textColor;
-    background-image: url("../assets/images/hero_banner.png");
+    background-image: url("../../assets/images/hero_banner.png");
     background-blend-mode: soft-light;
     background-position: center;
     background-repeat: no-repeat;
