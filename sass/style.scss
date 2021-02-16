@@ -356,14 +356,12 @@ article {
 
 .hero_form_area{
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 @media(min-width: 900px){
     
     .hero_form_area{
-        /* width: 100%;
-        max-width: 400px; */
         position: absolute;
         top: 0;
         right: 0;
